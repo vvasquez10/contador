@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <div class="containter">
+        <h2>Counter</h2>
+        <p> {{session['visitas']}} </p>
+        <div class="botones">
+            <form action="/addTwo" method="post">
+                <button class="twomore">+2 visitas</button>
+            </form>
+            <form action="/reset" method="post">
+                <button class="reset">Reset</button>
+            </form>
+            <form action="/addX" method="post">
+                <label for="addX">Añade el siguiente número de visitas </label>
+                <input type="text" id="addX" name="addX"/>
+                <button type="submit">Añadir</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
